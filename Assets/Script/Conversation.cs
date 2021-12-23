@@ -15,5 +15,8 @@ public class Conversation : ScriptableObject
 {
     public CharacterUI speakerLeft;
     public CharacterUI speakerRight;
+    public RuntimeAnimatorController animationLeft;
+    public RuntimeAnimatorController animationRight;
+   
     public Line[] lines;
 }

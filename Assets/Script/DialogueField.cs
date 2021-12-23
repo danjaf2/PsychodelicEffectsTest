@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class DialogueField : MonoBehaviour
 {
     private bool dialogTriggered = false;
@@ -10,6 +10,7 @@ public class DialogueField : MonoBehaviour
 
     private DialogTrigger ofObject;
     private DialogConversationTrigger ofObjectC;
+  
 
     public Vector2 dashDirection;
 

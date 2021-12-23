@@ -33,6 +33,9 @@ public class DialogDisplay : MonoBehaviour
         {
             conversationAssign = conversation;
 			speakerUILeft.Speaker = conversation.speakerLeft;
+			
+			//setting animator portrait
+			GameObject.Find("EnemyImage").GetComponent<Animator>().runtimeAnimatorController = conversation.animationRight;
 			speakerUIRight.Speaker = conversation.speakerRight;
 			animator.SetBool("IsOpen", true);
 			DisplayNextSentence();
@@ -79,7 +82,8 @@ public class DialogDisplay : MonoBehaviour
 
 	void EndDialogue()
 	{
-		
+		speakerUIRight.Show();
+		speakerUILeft.Show();
 		animator.SetBool("IsOpen", false);
 		Player.inDialog = false;
 		activeLineIndex = 0;

@@ -27,15 +27,30 @@ public class SpeakerUI : MonoBehaviour
             StopAllCoroutines();
             StartCoroutine(TypeSentence(dialog.text = value));
         }
+        get
+        {
+            return Dialog;
+        }
     }
 
     IEnumerator TypeSentence(string sentence)
     {
         dialog.text = "";
+        GameObject enemy= GameObject.Find("EnemyImage");
         foreach (char letter in sentence.ToCharArray())
         {
             dialog.text += letter;
-            yield return null;
+            //Play sound
+            if (enemy != null)
+            {
+                enemy.GetComponent<Animator>().SetBool("isTalking", true);
+            }
+            
+            yield return new WaitForSeconds(0.05f);
+        }
+        if (enemy != null)
+        {
+            enemy.GetComponent<Animator>().SetBool("isTalking", false);
         }
     }
 

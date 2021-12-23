@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c31fef6d4f3025845a7041334121584e, type: 3}
-  m_Name: Test
+  m_Name: Guy Talking
   m_EditorClassIdentifier: 
   speakerLeft: {fileID: 11400000, guid: 80c59344c1d31414f9b5ee62ab1f2d4d, type: 2}
   speakerRight: {fileID: 11400000, guid: 8c2eb7f297df1504bacfee42b979c5b8, type: 2}
@@ -18,10 +18,10 @@ MonoBehaviour:
   animationRight: {fileID: 9100000, guid: 72a408228d40c374b931bcecf3f0dd9d, type: 2}
   lines:
   - character: {fileID: 11400000, guid: 8c2eb7f297df1504bacfee42b979c5b8, type: 2}
-    text: Yo
+    text: Beep
   - character: {fileID: 11400000, guid: 8c2eb7f297df1504bacfee42b979c5b8, type: 2}
-    text: Wanna grab some pizza
+    text: Boop
+  - character: {fileID: 11400000, guid: 8c2eb7f297df1504bacfee42b979c5b8, type: 2}
+    text: Baap
   - character: {fileID: 11400000, guid: 80c59344c1d31414f9b5ee62ab1f2d4d, type: 2}
-    text: Yeah bro
-  - character: {fileID: 11400000, guid: 8c2eb7f297df1504bacfee42b979c5b8, type: 2}
-    text: Ah good, I really wanted skittle pizza
+    text: Ok buddy retard
