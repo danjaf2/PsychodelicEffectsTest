@@ -53,20 +53,20 @@
     <UnityVersion>2020.3.25f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\RandomizeColor.cs" />
-    <Compile Include="Assets\Enemy.cs" />
-    <Compile Include="Assets\Script\Movement.cs" />
-    <Compile Include="Assets\Script\Dialog.cs" />
-    <Compile Include="Assets\Script\DialogueField.cs" />
     <Compile Include="Assets\Script\DialogTrigger.cs" />
-    <Compile Include="Assets\Script\DialogConversationTrigger.cs" />
     <Compile Include="Assets\Script\DialogDisplay.cs" />
+    <Compile Include="Assets\Player.cs" />
+    <Compile Include="Assets\RandomizeColor.cs" />
+    <Compile Include="Assets\Script\SpeakerUI.cs" />
+    <Compile Include="Assets\Enemy.cs" />
+    <Compile Include="Assets\Script\CameraFollow.cs" />
+    <Compile Include="Assets\Script\DialogConversationTrigger.cs" />
+    <Compile Include="Assets\Script\Movement.cs" />
     <Compile Include="Assets\Script\DialogManager.cs" />
     <Compile Include="Assets\Script\Conversation.cs" />
-    <Compile Include="Assets\Script\SpeakerUI.cs" />
     <Compile Include="Assets\Script\CharacterUI.cs" />
-    <Compile Include="Assets\Player.cs" />
-    <Compile Include="Assets\Script\CameraFollow.cs" />
+    <Compile Include="Assets\Script\DialogueField.cs" />
+    <Compile Include="Assets\Script\Dialog.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

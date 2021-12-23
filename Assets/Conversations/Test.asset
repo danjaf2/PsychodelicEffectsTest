@@ -19,3 +19,7 @@ MonoBehaviour:
     text: Yo
   - character: {fileID: 11400000, guid: 8c2eb7f297df1504bacfee42b979c5b8, type: 2}
     text: Wanna grab some pizza
+  - character: {fileID: 11400000, guid: 80c59344c1d31414f9b5ee62ab1f2d4d, type: 2}
+    text: Yeah bro
+  - character: {fileID: 11400000, guid: 8c2eb7f297df1504bacfee42b979c5b8, type: 2}
+    text: Ah good, I really wanted skittle pizza

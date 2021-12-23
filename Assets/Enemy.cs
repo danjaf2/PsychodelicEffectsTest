@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.layer == 6)
         {
-            Debug.Log("Entered");
+           // Debug.Log("Entered");
 
         }
     }
@@ -35,7 +35,7 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.layer == 6)
         {
 
-            Debug.Log("Exited");
+            //Debug.Log("Exited");
         }
     }
 
@@ -43,7 +43,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.layer == 6)
         {
-            Debug.Log("Inside uwu");
+            //Debug.Log("Inside uwu");
 
         }
     }

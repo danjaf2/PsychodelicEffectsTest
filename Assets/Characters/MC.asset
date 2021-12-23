@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8310c65256617304284278a84796cb5e, type: 3}
   m_Name: MC
   m_EditorClassIdentifier: 
-  fullName: John Doe
+  fullName: Johnny Test
   portrait: {fileID: 21300000, guid: dd247f222c6264ca39475b75487a73f5, type: 3}

@@ -10,9 +10,11 @@ public class DialogConversationTrigger : MonoBehaviour
 	public void TriggerDialogue()
 	{
 		
-			
+		
 			FindObjectOfType<DialogDisplay>().StartConversation(conversation);
-			Destroy(this.gameObject);
+		
+			
+			
 		}
 		
 		

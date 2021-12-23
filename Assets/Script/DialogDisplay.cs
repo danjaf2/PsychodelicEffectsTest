@@ -47,6 +47,7 @@ public class DialogDisplay : MonoBehaviour
 
 	public void DisplayNextSentence()
 	{
+		Debug.Log("Check");
 		if (activeLineIndex == conversationAssign.lines.Length)
 		{
 			EndDialogue();
@@ -54,6 +55,7 @@ public class DialogDisplay : MonoBehaviour
 		}
 		Line line = conversationAssign.lines[activeLineIndex];
 		CharacterUI character = line.character;
+		
 
         if (speakerUILeft.SpeakerIs(character))
         {
@@ -72,11 +74,12 @@ public class DialogDisplay : MonoBehaviour
 		activeSpeakerUI.Show();
 		inactiveSpeakerUI.Hide();
 		activeSpeakerUI.Dialog = text;
+		
 	}
 
 	void EndDialogue()
 	{
-		Debug.Log("Ended");
+		
 		animator.SetBool("IsOpen", false);
 		Player.inDialog = false;
 		activeLineIndex = 0;

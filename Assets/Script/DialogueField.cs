@@ -16,7 +16,7 @@ public class DialogueField : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        dialogTriggered = false;
+        dialogTriggered = true;
         ofObject = GetComponent<DialogTrigger>();
         ofObjectC = GetComponent<DialogConversationTrigger>();
     }
@@ -28,27 +28,33 @@ public class DialogueField : MonoBehaviour
 
     public void enteredRoomDialogue()
     {
-        if (dialogTriggered == false) {
-            Collider2D playerCollider = Physics2D.OverlapCircle(this.transform.position, 5, playerMask);
+        if (Player.inDialog==false) {
+            Collider2D playerCollider = Physics2D.OverlapCircle(this.transform.position, 2, playerMask);
 
             // Found Player
             if (playerCollider)
             {
-                Player player = playerCollider.GetComponent<Player>();
-                if (player)
+                Debug.Log("inside");
+                if (Input.GetKey(KeyCode.UpArrow))
                 {
-                    //Player.inDialog = true;
-                    if(ofObjectC == null)
+                    Debug.Log("pressed");
+                    Player player = playerCollider.GetComponent<Player>();
+                    if (player)
                     {
-                        ofObject.TriggerDialogue();
+                        Player.inDialog = true;
+                        if (ofObjectC == null)
+                        {
+                            ofObject.TriggerDialogue();
+                        }
+                        else
+                        {
+                            ofObjectC.TriggerDialogue();
+                        }
+
+                        
                     }
-                    else
-                    {
-                        ofObjectC.TriggerDialogue();
-                    }
-                    
-                    dialogTriggered = true;
                 }
+                
             }
         }
         
