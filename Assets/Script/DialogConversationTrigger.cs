@@ -9,18 +9,12 @@ public class DialogConversationTrigger : MonoBehaviour
 
 	public void TriggerDialogue()
 	{
-		if (conversation.hasPlayed == false)
-        {
+		
 			
 			FindObjectOfType<DialogDisplay>().StartConversation(conversation);
-			conversation.hasPlayed = true;
-			Destroy(this.gameObject);
-		}
-		else if (conversation.hasPlayed == true)
-        {
-			Player.inDialog = false;
 			Destroy(this.gameObject);
 		}
 		
+		
 	}
-}
+

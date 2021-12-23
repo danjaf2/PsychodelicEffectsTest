@@ -76,6 +76,7 @@ public class DialogDisplay : MonoBehaviour
 
 	void EndDialogue()
 	{
+		Debug.Log("Ended");
 		animator.SetBool("IsOpen", false);
 		Player.inDialog = false;
 		activeLineIndex = 0;

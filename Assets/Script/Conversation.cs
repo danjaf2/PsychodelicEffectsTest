@@ -15,6 +15,5 @@ public class Conversation : ScriptableObject
 {
     public CharacterUI speakerLeft;
     public CharacterUI speakerRight;
-    public bool hasPlayed;
     public Line[] lines;
 }

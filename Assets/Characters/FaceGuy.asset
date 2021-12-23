@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c31fef6d4f3025845a7041334121584e, type: 3}
-  m_Name: New Conversation
+  m_Script: {fileID: 11500000, guid: 8310c65256617304284278a84796cb5e, type: 3}
+  m_Name: FaceGuy
   m_EditorClassIdentifier: 
-  speakerLeft: {fileID: 0}
-  speakerRight: {fileID: 0}
-  hasPlayed: 0
-  lines: []
+  fullName: Ben
+  portrait: {fileID: 21300000, guid: dd8f3c93fb91f0547920f81ad30a32e5, type: 3}

@@ -64,6 +64,7 @@ public class DialogManager : MonoBehaviour
 
 	void EndDialogue()
 	{
+		Debug.Log("Here");
 		animator.SetBool("IsOpen", false);
 		Player.inDialog = false;
 	}
