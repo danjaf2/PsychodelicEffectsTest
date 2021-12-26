@@ -37,6 +37,7 @@ public class SpeakerUI : MonoBehaviour
     {
         dialog.text = "";
         GameObject enemy= GameObject.Find("EnemyImage");
+        GameObject player = GameObject.Find("MC");
         foreach (char letter in sentence.ToCharArray())
         {
             dialog.text += letter;
@@ -45,12 +46,20 @@ public class SpeakerUI : MonoBehaviour
             {
                 enemy.GetComponent<Animator>().SetBool("isTalking", true);
             }
-            
+            if (player != null)
+            {
+                player.GetComponent<Animator>().SetBool("isTalking", true);
+            }
+
             yield return new WaitForSeconds(0.05f);
         }
         if (enemy != null)
         {
             enemy.GetComponent<Animator>().SetBool("isTalking", false);
+        }
+        if (player != null)
+        {
+            player.GetComponent<Animator>().SetBool("isTalking", false);
         }
     }
 

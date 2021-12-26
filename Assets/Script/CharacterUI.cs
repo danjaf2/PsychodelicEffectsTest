@@ -7,4 +7,5 @@ public class CharacterUI : ScriptableObject
 {
     public string fullName;
     public Sprite portrait;
+    public RuntimeAnimatorController animations;
 }

@@ -35,7 +35,8 @@ public class DialogDisplay : MonoBehaviour
 			speakerUILeft.Speaker = conversation.speakerLeft;
 			
 			//setting animator portrait
-			GameObject.Find("EnemyImage").GetComponent<Animator>().runtimeAnimatorController = conversation.animationRight;
+			GameObject.Find("EnemyImage").GetComponent<Animator>().runtimeAnimatorController = conversation.speakerRight.animations;
+			GameObject.Find("MC").GetComponent<Animator>().runtimeAnimatorController = conversation.speakerLeft.animations;
 			speakerUIRight.Speaker = conversation.speakerRight;
 			animator.SetBool("IsOpen", true);
 			DisplayNextSentence();
